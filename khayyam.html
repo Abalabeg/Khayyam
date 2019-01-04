@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Khayyam</title>
+  <link href='http://www.fontonline.ir/css/IranNastaliq.css' rel='stylesheet' type='text/css'>
+  <script src="https://gitcdn.xyz/repo/skorokithakis/expounder/master/expounder.js"></script>
+  <link rel="stylesheet" href="https://gitcdn.xyz/repo/skorokithakis/expounder/master/expounder.css" />
+  <link href="https://fonts.googleapis.com/css?family=Anton|Charm|Satisfy|Assistant" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideToggle("slow");
+      });
+    });
+    $(document).ready(function () {
+      $("#flip1").click(function () {
+        $("#panel1").slideToggle("slow");
+      });
+    });
+    function replace() {
+      document.getElementById("f").style.display = "none";
+      document.getElementById("f_vase").style.display = "block";
+    }
+    function replace1() {
+      document.getElementById("d").style.display = "none";
+      document.getElementById("d_kruge").style.display = "block";
+    }
+    function replace2() {
+      document.getElementById("e").style.display = "none";
+      document.getElementById("e_pot").style.display = "block";
+    }
+    $(document).ready(function () {
+      $("#demo1").click(function () {
+        $("#para").animate({
+          width: 'toggle'
+        });
+      });
+    });
+    $(document).ready(function () {
+      $("#demo").click(function () {
+        $("#para1").animate({
+          height: 'toggle'
+        });
+      });
+    });
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    [class*="col-"] {
+      float: right;
+      padding: 15px;
+    }
+
+    .header {
+      background-color: #f1caa5a4;
+      color: #ffffff;
+      padding: 15px;
+    }
+
+    .footer {
+      background-color: #f1caa5a4;
+      color: #000000;
+      text-align: justify;
+      font-size: 10px;
+      padding: 5px;
+    }
+
+    [class*="col-"] {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+
+      .col-1 {
+        width: 8.33%;
+      }
+
+      .col-2 {
+        width: 16.66%;
+      }
+
+      .col-3 {
+        width: 25%;
+      }
+
+      .col-4 {
+        width: 33.33%;
+      }
+
+      .col-5 {
+        width: 41.66%;
+      }
+
+      .col-6 {
+        width: 50%;
+      }
+
+      .col-7 {
+        width: 58.33%;
+      }
+
+      .col-8 {
+        width: 66.66%;
+      }
+
+      .col-9 {
+        width: 75%;
+      }
+
+      .col-10 {
+        width: 83.33%;
+      }
+
+      .col-11 {
+        width: 91.66%;
+      }
+
+      .col-12 {
+        width: 100%;
+      }
+    }
+    
+    @media only screen and (min-width: 768px) {
+
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    
+    }
+    audio:hover,
+    audio:focus,
+    audio:active {
+      -webkit-box-shadow: 15px 15px 20px rgba(146, 35, 35, 0.4);
+      -moz-box-shadow: 15px 15px 20px rgba(65, 15, 94, 0.4);
+      box-shadow: 15px 15px 20px rgba(124, 101, 75, 0.582);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+
+    audio {
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -moz-box-shadow: 2px 2px 4px 0px #030222;
+      -webkit-box-shadow: 2px 2px 4px 0px #006773;
+      box-shadow: 2px 2px 4px 0px #664c3b;
+      -moz-border-radius: 7px 7px 7px 7px;
+      -webkit-border-radius: 7px 7px 7px 7px;
+      border-radius: 7px 7px 7px 7px;
+    }
+
+    #intro {
+      font-size: 35px;
+      text-align: center;
+      font-family: 'charm', cursive;
+      margin-top: 70px;
+    }
+
+    .myclass {
+      font-family: IranNastaliq, 'IranNastaliq', tahoma;
+      
+      width: 100%;
+      color: black;
+      font-size: 25px;
+    }
+
+    #demo,
+    #demo1 {
+      font-size: 30px;
+      color: rgb(255, 123, 0);
+      font-family: IranNastaliq, 'IranNastaliq', tahoma;
+    }
+
+    span[data-expounded] {
+      font-style: italic;
+    }
+
+    #panel,
+    #flip,
+    #panel1,
+    #flip1 {
+      padding: 20px;
+      text-align: center;
+      background-color: #e9bea2;
+      border: solid 2px #1f3b2b;
+      border-radius: 10px;
+      margin-top: 10px;
+      box-shadow: 10px 15px #523b33;
+      width: 100%;
+    }
+
+    #flip,
+    #flip1 {
+      text-transform: uppercase;
+      color: black;
+      text-shadow: 3px 2px rgb(192, 151, 104);
+      font-family: 'Charm', cursive;
+      font-size: 40px;
+    }
+
+    #panel {
+      padding: 50px;
+      display: none;
+    }
+
+    #panel1 {
+      padding: 50px;
+      display: none;
+      background-image: url('https://scontent-frt3-2.cdninstagram.com/vp/7d5d78ef35d8c2f594bd07243d015784/5CD1B7B5/t51.2885-15/e35/20986958_1881108538876620_7901654872951357440_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&ig_cache_key=MTU4NTY5Mjg0OTQ1MzA4NzUyOQ%3D%3D.2');
+      background-color: rgba(255, 255, 255, 0.74);
+      background-blend-mode: lighten;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    body {
+      background-color: rgb(233, 222, 161);
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    #f,
+    #d,
+    #e {
+      width: 90%;
+      background-color: rgba(240, 233, 171, 0.534);
+      border: 0.5px solid black;
+      padding: 10px;
+      text-align: center;
+      font-family: 'Satisfy', cursive;
+      font-size: 50px;
+      color: #eec79483;
+    }
+
+    #f_vase,
+    #d_kruge,
+    #e_pot {
+      width: 90%;
+      background-color: rgb(240, 233, 171, 0.534);
+      border: 0.5px solid black;
+      text-align: justify;
+      font-family: 'Satisfy', cursive;
+      padding: 10px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div > <header id="intro"> <b> Omar Khayyam,  l'astronome, mathématicien et poète persan</b> </header>  <br>
+    <blockquote style="text-align: center; font-family: 'Charm', sans-serif;">
+      «Si les Rubayat, par les vœux qu'il forment, par les doutes qu'ils expriment, par les sentences désinvoltes ou
+      désabusées qu'ils profèrent, livrent peu à peu les clés d'un art de vivre, ils manifestent surtout l'implacable
+      lucidité de leur auteur. Ils rappellent que Khayam n'est pas un théoricien du laisser-aller, que s'il est libertin,
+      c'est à la façon des philosophes et, en tout état de cause, plus proche des sceptiques que des hédonistes. Devant la
+      fable du monde, il campe, incrédule, rebelle, irréductible. Un verre à la main, il se divertit de l'agitation et des
+      mirages alentour. Il compose litanie sur litanie autour du mot "rien". Il rit aux étoiles. N'est pas vraiment triste.
+      Le silence des espaces infinis ne l'effraie pas.»<sup><a href="#fn1" id="r1">*</a></sup>
+    </blockquote>
+  </div> <br>
+  <div id="flip">Biographie d'Omar Khayyam</div>
+  <div id="panel"> <iframe src="https://uploads.knightlab.com/storymapjs/9e2b77466aa98f9118518f4b50cd9442/kh/index.html" frameborder="0" width="100%" height="800"></iframe>
+  </div>
+  <div id="flip1"> Une des Rubaïyat d'Omar Khayyam</div>
+
+  <div id="panel1">
+    <div class="header">
+      <div>
+        <audio id="adi" style="width:50%"controls>
+          <source src="http://dl.irmp3.ir/data/song/Ahmad_Shamlou-Dar_Kargah_Koozeh_Gari_...-(WWW.IRMP3.IR).mp3">
+          </source>
+        </audio>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-s-3 " >
+        <div class="myclass" dir="rtl">
+          <span class="au" id="ts0.525487"> در <span id="demo">کارگهِ کوزه گری</span> بودم دوش،</span></br>
+          <span class="au" id="ts3.993877">دیدم دو هزار <span id="demo1">کوزه</span> گویا و خموش؛</span></br>
+          <span class="au" id="ts11.0">هر یک به زبانِ حال با من می گفت:</span></br>
+          <span class="au" id="ts14.993877"> «کو کوزه گر و کوزه خر و کوزه فروش؟</span>
+          <span class="au" id="ts21.993877"></span>
+        </div>
+      </div>
+
+      <div class="col-6 col-s-5">
+        <div id="f" style="display:block;" onclick="replace();return false" />Francais
+        </div>
+        <div class="f_vase" id="f_vase" style="display:none">
+          J’ai été hier dans <span class="m">l’atelier d’un potier</span> .<br>
+          J’y ai vu deux mille <span class="m1">vases</span> silencieux ou parlant entre eux.</br>
+          Chacun me demendait dans son langage:<br>
+          “Qui est le potier? qui l’acheteur? qui le vendeur?”<sup><a href="#fn1" id="r1">1</a></sup><br>
+        </div>
+        <div id="d" style="display:block" onclick="replace1();return false" />Deutsch
+        </div>
+        <div class="d_kruge" id="d_kruge" style="display:none">
+          Bei einem <span class="m">Töpfer</span> sah ich gestern zweitausend <span class="m1">Krüge</span>,<br>
+          Die einen stumm, die andern redend als ob jeder früge:<br>
+          Wer hat uns geformt und wo stammen wir her?<br>
+          Wer ist hier der Käufer, und der Verkäufer, wer?<sup><a href="#fn2" id="r2">2</a></sup><br>
+        </div>
+        <div id="e" style="display:block" onclick="replace2();return false" />English
+        </div>
+        <div class="e_pot" id="e_pot" style="display:none;">
+          I passed <span class="m">the potter's shop</span> by yesterday<br>
+          Noisy and mute two thousand <span class="m1">pots</span> I saw,<br>
+          From one of them a sudden shout did rise: <br>
+          "Where's he who makes the pots? Who sells? Who buys?<sup><a href="#fn3" id="r3">3</a></sup><br>
+        </div>
+      </div>
+
+      <div class="col-4 col-s-4 left">
+        <div id="para1" style="padding:20px;height:auto;width:100%;display:none;font-family: 'Assistant', sans-serif;">
+          <p><b> un atelier de poterie traditionnelle en Iran </b></p> <iframe width=100% src="https://www.youtube.com/embed/tGS2vn56rYw?start=8"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  
+      <div class="col-8 col-s-12">
+          
+        <div id="para" style=" text-align: justify; height:auto;width:100%;display:none;padding: 20px;font-family: 'Assistant', sans-serif;">
+          <p> <img id="myImg" src="https://scontent-yyz1-1.cdninstagram.com/vp/e3d8fa1566e84d293dd594bad17dd690/5CBA2B59/t51.2885-15/e35/17077711_1121406194652005_4008226620664971264_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com"
+              style="width:20%; float:left; padding: 8px;"><b> Le vase est un des symboles et un des <span data-expounder="motif">motifs</span> importants dans les quatrains
+              de Khayyam<span data-expounded="motif"> Le motif est une forme esthétique, qui peut aussi avoir une valeur signifiante. Elle
+              fait souvent l'objet de répétitions et de reprises, dans le cours d'une œuvre littéraire par exemple. Il
+              contribue alors à la cohérence et à la tonalité particulière de l'œuvre</span>. L’utilisation de motif de vase est en
+              effet une manière pour rappeler à tout le monde de morte et de néant. Autrement dit, Khayyam décrit l’homme après la
+              mort comme une vase en argile. Il y a différentes raisons pour lesquelles Khayyam a choisi ce motif pour décrire
+              l’homme qui est déjà mort : <br>
+              1. Dans les quatrains de Khayyam, les thèmes généraux sont la mort, vivre le moment présent, la vie passagère... Une
+              des manières pour présenter ces idées aux lecteurs est l’utilisation de motif de vase dans les quatrains. En effet,
+              l’usage de motif comme vase dans ces poésies est une manière créative pour réduire les effets négatifs sur le sujet
+              comme la mort. Il tente de transmettre les concepts de mort et la vie passagère en utilisant le vase comme un motif
+              dans les quatrains. <br>
+              2. À l’époque, l’industrie de poterie était très populaire dans la ville de Nichapour. <br>
+              3. Cet objet montre bien la philosophie de khayyam par rapport à scepticisme, vivre le moment présent, la vie
+              passagère. En effet, après la mort, le corps de l’homme devient une partie de terre et finalement, un vase. Ainsi, même
+              la vie est toujours avec difficulté, il faut profiter de la vie et être content et vivre le moment présent.  
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p id="fn1"><a href="#r1">1</a>Robâ'iyât du Sage Khayyâm. 144 quatrains d'Omar Khayyâm traduits littéralement par
+        Claude Anet et Mirza Muhammad. Nouvelle édition revue, accompagnée d'une étude par Gilbert Lazard et de 22
+        qua-trains dans une traduction nouvelle. Paris, Club des Libraires de France, 1957.</p>
+      <p id="fn2"><a href="#r2">2</a>Die Lieder und Sprüche des Omar Chajjâm. Verdeutscht von Friedrich Bodenstedt.
+        Breslau, Schlet-ter'sche Buchhandlung, 1881. </p>
+      <p id="fn3"><a href="#r3">3</a>The Ruba'yat of Omar Khayam. Translated by H.M. Cadell. With an introduction by
+        Richard Garnett. London; New York, John Lane The Bodley Head, 1899. </p>
+    </div>
+  </div> <br>
+
+  </div class="footer">
+    <p id="fn1" style="font-size:10px; font-family: 'charm', cursive;"><a href="#r1">*</a>Traduction du persan par Armand Robin. Préface d'André Velter</p>
+  <div>
+  <script>
+      document.getElementById("demo").onmouseover = function () { mouseOver() };
+      document.getElementById("demo").addEventListener("mouseout", mouseOut);
+      function mouseOver() {
+        var x = document.querySelectorAll("div > .m");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "rgb(255, 123, 0)";
+        }
+      }
+      function mouseOut() {
+        var x = document.querySelectorAll("div > .m");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "rgb(240, 233, 171, 0.534)";
+        }
+      }
+      document.getElementById("demo1").onmouseover = function () { mouseOver1() };
+      document.getElementById("demo1").addEventListener("mouseout", mouseOut1);
+      function mouseOver1() {
+        var x = document.querySelectorAll("div > .m1");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "rgb(255, 123, 0)";
+        }
+      }
+      function mouseOut1() {
+        var x = document.querySelectorAll("div > .m1");
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.backgroundColor = "rgb(240, 233, 171, 0.534)";
+        }
+      }
+  
+      let spns = document.getElementsByClassName("au");
+      let audi = document.getElementById("adi");
+  
+      audi.addEventListener("timeupdate", f1);
+      function f1() {
+        let j;
+        for (j = 0; j < spns.length; j++) {
+          let time = Number(spns[j].id.slice(2));
+          if (time < audi.currentTime) {
+            if (j > 0) spns[j - 1].style.fontSize = "25px";
+            spns[j].style.fontSize = "30px";
+          }
+        }
+      }
+    </script>
+</body>
+
+</html>
