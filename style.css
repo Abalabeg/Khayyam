@@ -1,0 +1,357 @@
+
+    * {
+        box-sizing: border-box;
+      }
+  
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+  
+      [class*="col-"] {
+        float: right;
+        padding: 15px;
+      }
+  
+      .header {
+        background-color: #f1caa5a4;
+        color: #ffffff;
+        padding: 15px;
+      }
+  
+      .footer {
+        background-color: #f1caa5a4;
+        color: #000000;
+        text-align: justify;
+        font-size: 10px;
+        padding: 5px;
+      }
+  
+      [class*="col-"] {
+        width: 100%;
+      }
+  
+      @media only screen and (min-width: 600px) {
+  
+        .col-1 {
+          width: 8.33%;
+        }
+  
+        .col-2 {
+          width: 16.66%;
+        }
+  
+        .col-3 {
+          width: 25%;
+        }
+  
+        .col-4 {
+          width: 33.33%;
+        }
+  
+        .col-5 {
+          width: 41.66%;
+        }
+  
+        .col-6 {
+          width: 50%;
+        }
+  
+        .col-7 {
+          width: 58.33%;
+        }
+  
+        .col-8 {
+          width: 66.66%;
+        }
+  
+        .col-9 {
+          width: 75%;
+        }
+  
+        .col-10 {
+          width: 83.33%;
+        }
+  
+        .col-11 {
+          width: 91.66%;
+        }
+  
+        .col-12 {
+          width: 100%;
+        }
+      }
+      
+      @media only screen and (min-width: 768px) {
+  
+      .col-s-1 {width: 8.33%;}
+      .col-s-2 {width: 16.66%;}
+      .col-s-3 {width: 25%;}
+      .col-s-4 {width: 33.33%;}
+      .col-s-5 {width: 41.66%;}
+      .col-s-6 {width: 50%;}
+      .col-s-7 {width: 58.33%;}
+      .col-s-8 {width: 66.66%;}
+      .col-s-9 {width: 75%;}
+      .col-s-10 {width: 83.33%;}
+      .col-s-11 {width: 91.66%;}
+      .col-s-12 {width: 100%;}
+      
+      }
+      audio:hover,
+      audio:focus,
+      audio:active {
+        -webkit-box-shadow: 15px 15px 20px rgba(146, 35, 35, 0.4);
+        -moz-box-shadow: 15px 15px 20px rgba(65, 15, 94, 0.4);
+        box-shadow: 15px 15px 20px rgba(124, 101, 75, 0.582);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+      }
+  
+      audio {
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        transition: all 0.5s linear;
+        -moz-box-shadow: 2px 2px 4px 0px #030222;
+        -webkit-box-shadow: 2px 2px 4px 0px #006773;
+        box-shadow: 2px 2px 4px 0px #664c3b;
+        -moz-border-radius: 7px 7px 7px 7px;
+        -webkit-border-radius: 7px 7px 7px 7px;
+        border-radius: 7px 7px 7px 7px;
+      }
+  
+      #intro {
+        font-size: 35px;
+        text-align: center;
+        font-family: 'charm', cursive;
+        margin-top: 70px;
+      }
+  
+      .myclass {
+        font-family: IranNastaliq, 'IranNastaliq', tahoma;
+        
+        width: 100%;
+        color: black;
+        font-size: 25px;
+      }
+  
+      #demo,
+      #demo1 {
+        font-size: 30px;
+        color: rgb(255, 123, 0);
+        font-family: IranNastaliq, 'IranNastaliq', tahoma;
+      }
+  
+      span[data-expounded] {
+        font-style: italic;
+      }
+  
+      #panel,
+      #flip,
+      #panel1,
+      #flip1 {
+        padding: 20px;
+        text-align: center;
+        background-color: #e9bea2;
+        border: solid 2px #1f3b2b;
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 10px 15px #523b33;
+        width: 100%;
+      }
+  
+      #flip,
+      #flip1 {
+        text-transform: uppercase;
+        color: black;
+        text-shadow: 3px 2px rgb(192, 151, 104);
+        font-family: 'Charm', cursive;
+        font-size: 40px;
+      }
+  
+      #panel {
+        /*padding: 50px;*/
+        display: none;
+      }
+  
+      #panel1 {
+        padding: 50px;
+        display: none;
+        background-image: url('https://scontent-frt3-2.cdninstagram.com/vp/7d5d78ef35d8c2f594bd07243d015784/5CD1B7B5/t51.2885-15/e35/20986958_1881108538876620_7901654872951357440_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&ig_cache_key=MTU4NTY5Mjg0OTQ1MzA4NzUyOQ%3D%3D.2');
+        background-color: rgba(255, 255, 255, 0.74);
+        background-blend-mode: lighten;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+  
+      body {
+        background-color: rgb(233, 222, 161);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      #f,
+      #d,
+      #e {
+        width: 90%;
+        background-color: rgba(240, 233, 171, 0.534);
+        border: 0.5px solid black;
+        padding: 10px;
+        text-align: center;
+        font-family: 'Satisfy', cursive;
+        font-size: 50px;
+        color: #eec79483;
+      }
+  
+      #f_vase,
+      #d_kruge,
+      #e_pot {
+        width: 90%;
+        background-color: rgb(240, 233, 171, 0.534);
+        border: 0.5px solid black;
+        text-align: justify;
+        font-family: 'Satisfy', cursive;
+        padding: 10px;
+        font-size: 15px;
+      }
+  
+      *{box-sizing: border-box; -webkit-box-sizing: border-box; }
+      html, body { height: 100%; }
+      body { margin: 0; font: 16px/1.3 sans-serif; }
+  
+  /*
+  PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+  http://stackoverflow.com/a/34696029/383904
+  */
+  
+      .CSSgal {
+          position: relative;
+          overflow: hidden;
+          height: auto;
+      }
+  
+      .CSSgal .slider {
+          height: 100%;
+          white-space: nowrap;
+          font-size: 0;
+          transition: 0.8s;
+      }
+  
+      .CSSgal .slider > * {
+          font-size: 1rem;
+          display: inline-block;
+          white-space: normal;
+          vertical-align: top;
+          height: 100%;
+          width: 100%;
+          background: none 50% no-repeat;
+          background-size: cover;
+      }
+  
+      .CSSgal .prevNext {
+          position: absolute;
+          z-index: 1;
+          top: 50%;
+          width: 100%;
+          height: 0;
+      }
+  
+      .CSSgal .prevNext > div+div {
+          visibility: hidden; 
+      }
+  
+      .CSSgal .prevNext a {
+          background: rgb(190, 74, 6);
+          position: absolute;
+          width:       60px;
+          height:      60px;
+          line-height: 60px; /* If you want to place numbers */
+          text-align: center;
+          opacity: 0.7;
+          -webkit-transition: 0.3s;
+                      transition: 0.3s;
+          -webkit-transform: translateY(-50%);
+                      transform: translateY(-50%);
+          left: 0;
+      }
+  
+      .CSSgal .prevNext a:hover {
+          opacity: 1;
+      }
+      
+      .CSSgal .prevNext a+a {
+          left: auto;
+          right: 0;
+      }
+  
+      .CSSgal .bullets {
+          position: absolute;
+          z-index: 2;
+          bottom: 0;
+          padding: 10px 0;
+          width: 100%;
+          text-align: center;
+      }
+  
+      .CSSgal .bullets > a {
+          display: inline-block;
+          width:       30px;
+          height:      30px;
+          line-height: 30px;
+          text-decoration: none;
+          text-align: center;
+          background: rgb(255, 255, 255, 0.5);
+          -webkit-transition: 0.3s;
+                      transition: 0.3s;
+      }
+  
+      .CSSgal .bullets > a+a {
+          background: rgba(255, 255, 255, 0.5);
+      }
+  
+      .CSSgal .bullets > a:hover {
+          background: rgba(255, 255, 255, 0.7) !important;
+      }
+  
+      .CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+  
+      #s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+      #s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+      #s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+  
+      .CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+  
+      #s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+      #s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+      #s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+  
+      #s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+      #s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+      #s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+  
+      .CSSgal{
+          color: rgb(12, 12, 12);	
+          text-align: justify;
+        font-family: 'Charm', cursive;
+      }
+  
+      .CSSgal .slider h2 {
+          margin-top: 40vh;
+          font-weight: 200;
+          letter-spacing: -0.06em;
+          word-spacing: 0.2em;
+          font-size: 3em;
+      }
+  
+      .CSSgal a {
+          border-radius: 50%;
+          margin: 0 3px;
+          color: rgba(0,0,0,0.8);
+          text-decoration: none;
+      }
+    
